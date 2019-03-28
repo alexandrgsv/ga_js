@@ -34,6 +34,12 @@ for c=1:ndomains
     ub(c)=length(curr_d);
     intcon(c)=c;
 end
+cd .. ;
+! node . run-service-1 
+cd ./ga ;
+if isfile('../output/service-1/result.json')
+    delete '../output/service-1/result.json'
+end
 
 %% Start the ga
 [x,fval,exitflag,output,population,score] = ...
