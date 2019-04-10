@@ -14,8 +14,10 @@ options = optimoptions('ga');
 %% Modify options setting
 options = optimoptions(options);
 options.Display = 'iter';
-options.MaxGenerations = 300;
-options.MaxStallGenerations=20;
+options.MaxGenerations = 100;
+options.MaxStallGenerations=3;
+options.PopulationSize=100;
+options.EliteCount=0.01*options.PopulationSize;
 options.PlotFcn = @gaplotbestf;
 
 %% Define lower and upper bounds
@@ -40,7 +42,8 @@ cd ./ga ;
 if isfile('../output/service-1/result.json')
     delete '../output/service-1/result.json'
 end
-
+tic
 %% Start the ga
 [x,fval,exitflag,output,population,score] = ...
 ga(@penaltyJS,ndomains,[],[],[],[],lb,ub,[],intcon,options);
+toc
