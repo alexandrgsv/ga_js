@@ -15,9 +15,9 @@ options = optimoptions('ga');
 options = optimoptions(options);
 options.Display = 'iter';
 options.MaxGenerations = 100;
-options.MaxStallGenerations=3;
-options.PopulationSize=100;
-options.EliteCount=0.01*options.PopulationSize;
+options.MaxStallGenerations=10;
+options.PopulationSize=20;
+options.EliteCount=1;
 options.PlotFcn = @gaplotbestf;
 
 %% Define lower and upper bounds
