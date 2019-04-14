@@ -1,0 +1,117 @@
+{
+  "filter": [
+    {
+      "name": "filter",
+      "parameters": {},
+      "path": "filter/lodash.js"
+    },
+    {
+      "name": "filter",
+      "parameters": {},
+      "path": "filter/underscore.js"
+    }
+  ],
+  "map": [
+    {
+      "name": "map",
+      "parameters": {},
+      "path": "map/lodash.js"
+    },
+    {
+      "name": "map",
+      "parameters": {},
+      "path": "map/native.js"
+    },
+    {
+      "name": "map",
+      "parameters": {},
+      "path": "map/underscore.js"
+    }
+  ],
+  "first": [
+    {
+      "name": "first",
+      "parameters": {},
+      "path": "first/lodash.js"
+    },
+    {
+      "name": "first",
+      "parameters": {},
+      "path": "first/underscore.js"
+    }
+  ],
+  "pathResolve": [
+    {
+      "name": "pathResolve",
+      "parameters": {},
+      "path": "path/resolve/native.js"
+    }
+  ],
+  "stringReplace": [
+    {
+      "name": "stringReplace",
+      "parameters": {},
+      "path": "string/replace/native.js"
+    }
+  ],
+  "zipCompress": [
+    {
+      "name": "zipCompress",
+      "parameters": {},
+      "path": "zip/compress/adm-zip.js"
+    },
+    {
+      "name": "zipCompress",
+      "parameters": {},
+      "path": "zip/compress/jszip.js"
+    },
+    {
+      "name": "zipCompress",
+      "parameters": {},
+      "path": "zip/compress/zipit.js"
+    }
+  ],
+  "hashMD5": [
+    {
+      "name": "hashMD5",
+      "parameters": {},
+      "path": "hash/md5/hasha.js"
+    },
+    {
+      "name": "hashMD5",
+      "parameters": {},
+      "path": "hash/md5/md5.js"
+    },
+    {
+      "name": "hashMD5",
+      "parameters": {},
+      "path": "hash/md5/ts-md5.js"
+    }
+  ],
+  "fsRead": [
+    {
+      "name": "fsRead",
+      "parameters": {},
+      "path": "fs/read/fs-extra.js"
+    },
+    {
+      "name": "fsRead",
+      "parameters": {},
+      "path": "fs/read/native.js"
+    }
+  ],
+  "fsReaddir": [
+    {
+      "name": "fsReaddir",
+      "parameters": {},
+      "path": "fs/readdir/fs-extra.js"
+    }
+  ],
+  "fsReaddirRecursive": [
+    {
+      "name": "fsReaddirRecursive",
+      "parameters": {},
+      "path": "fs/readdir/recursive/recursive-readdir.js"
+    }
+  ]
+}
