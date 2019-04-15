@@ -26,6 +26,7 @@ function penalty=penaltyJS(varg)
             try
                 %                 !cp ../output/service-1/result.json ../output/service-1/result_r.json
                 copyfile('../output/service-1/result.json','../output/service-1/result_r.json');
+                copyfile('../output/service-1/result_r.json',strcat('../output/results/result',int2str(last_result_time),'.json'));
                 %                 disp('trying...');
                 result = jsondecode(fileread('../output/service-1/result_r.json'));
                 delete '../output/service-1/result_r.json';
