@@ -17,7 +17,8 @@ options.Display = 'iter';
 options.MaxGenerations = 100;
 options.MaxStallGenerations=10;
 options.PopulationSize=20;
-options.EliteCount=1;
+options.EliteCount=3;
+options.FunctionTolerance=0.01;
 options.PlotFcn = @gaplotbestf;
 
 %% Define lower and upper bounds

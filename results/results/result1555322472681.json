@@ -1,0 +1,29 @@
+{
+  "time": 1555322473064,
+  "initialization": {
+    "cpuUsage": {
+      "user": 24000,
+      "system": 0
+    },
+    "memoryUsage": {
+      "rss": 2920448,
+      "heapTotal": 6856704,
+      "heapUsed": 2958432,
+      "external": 189495
+    },
+    "hrtime": 45470889
+  },
+  "execution": {
+    "cpuUsage": {
+      "user": 4000,
+      "system": 0
+    },
+    "memoryUsage": {
+      "rss": 0,
+      "heapTotal": 0,
+      "heapUsed": 158896,
+      "external": 96
+    },
+    "hrtime": 4105211
+  }
+}
