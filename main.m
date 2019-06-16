@@ -44,8 +44,13 @@ cd ./ga ;
 if isfile('../output/service-1/result.json')
     delete '../output/service-1/result.json'
 end
-tic
+! rm -r ../output/results
+! mkdir ../output/results
+clk1=clock;
+
 %% Start the ga
 [x,fval,exitflag,output,population,score] = ...
 ga(@penaltyJS,ndomains,[],[],[],[],lb,ub,[],intcon,options);
-toc
+
+disp(clock-clk1);
+
