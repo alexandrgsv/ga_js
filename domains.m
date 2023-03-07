@@ -15,7 +15,7 @@
 
 %read the alternatives.json
 
-alternatives=jsondecode(fileread('../output/alternatives.json'));
+alternatives=jsondecode(fileread('alternatives.json'));
 
 
 

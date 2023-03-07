@@ -21,6 +21,7 @@ options.EliteCount=1;
 options.FunctionTolerance=0.01;
 options.PlotFcn = @gaplotbestf;
 options.SelectionFcn=@selectionstochunif;
+options.OutputFcn = @ga_save_each_gen;
 
 %% Define lower and upper bounds
 
@@ -44,13 +45,18 @@ cd ./ga ;
 if isfile('../output/service-1/result.json')
     delete '../output/service-1/result.json'
 end
+! rm -r ./generations
+! mkdir ./generations
+clk1=datetime("now");
+
 ! rm -r ../output/results
 ! mkdir ../output/results
-clk1=clock;
 
 %% Start the ga
 [x,fval,exitflag,output,population,score] = ...
 ga(@penaltyJS,ndomains,[],[],[],[],lb,ub,[],intcon,options);
 
-disp(clock-clk1);
+disp(datetime("now")-clk1);
+
+concatenate_results;
 

@@ -1,0 +1,9 @@
+*.zip
+*.prj
+*.fig
+*.mat
+*.jpg
+./main
+./old_res
+./results
+./generations
